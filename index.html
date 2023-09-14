@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container">
+                <h2>Registration Form</h2>
+                <form name="registrationForm" onsubmit="addstudent(event)" >
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" id="firstName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="birthdate" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="terms" value="Accept Terms & Conditions" required>*Accept Terms & Conditions
+                </div>
+                <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <table>
+                <caption>Entries</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>DOB</th>
+                        <th>Accepted Terms?</th>
+                    </tr>
+                </thead>
+                <tbody id="d"></tbody>
+            </table>
+        </div>
+    <script src="./script.js"></script>
+    </body>
+</html>
